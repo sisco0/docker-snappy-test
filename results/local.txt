@@ -1,0 +1,294 @@
+master: Release
+2021-03-26T19:02:39+00:00
+Running ./build_Release/snappy_benchmark
+Run on (16 X 3900 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 512 KiB (x8)
+  L3 Unified 16384 KiB (x2)
+Load Average: 1.77, 1.32, 1.60
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+--------------------------------------------------------------------------------------
+Benchmark                            Time             CPU   Iterations UserCounters...
+--------------------------------------------------------------------------------------
+BM_UFlat/0                       28682 ns        28677 ns        23942 bytes_per_second=3.32555G/s html
+BM_UFlat/1                      364640 ns       364571 ns         1905 bytes_per_second=1.79353G/s urls
+BM_UFlat/2                        2266 ns         2266 ns       309304 bytes_per_second=50.5996G/s jpg
+BM_UFlat/3                         127 ns          127 ns      5719063 bytes_per_second=1.46838G/s jpg_200
+BM_UFlat/4                        3900 ns         3899 ns       185520 bytes_per_second=24.4618G/s pdf
+BM_UFlat/5                      119229 ns       119186 ns         5871 bytes_per_second=3.20063G/s html4
+BM_UFlat/6                      133548 ns       133518 ns         5248 bytes_per_second=1086.32M/s txt1
+BM_UFlat/7                      123139 ns       123113 ns         5773 bytes_per_second=969.681M/s txt2
+BM_UFlat/8                      335639 ns       335474 ns         2050 bytes_per_second=1.18473G/s txt3
+BM_UFlat/9                      505309 ns       505121 ns         1389 bytes_per_second=909.758M/s txt4
+BM_UFlat/10                      24037 ns        24031 ns        29099 bytes_per_second=4.59598G/s pb
+BM_UFlat/11                     133822 ns       133785 ns         5286 bytes_per_second=1.28312G/s gaviota
+BM_UFlatMedley                 1892743 ns      1883148 ns          344 bytes_per_second=1.44834G/s
+BM_UValidate/0                   13854 ns        13829 ns        50513 bytes_per_second=6.89605G/s html
+BM_UValidate/1                  242994 ns       242564 ns         2885 bytes_per_second=2.69566G/s urls
+BM_UValidate/2                    82.6 ns         82.5 ns      8533253 bytes_per_second=1.35773T/s jpg
+BM_UValidate/3                    51.9 ns         51.8 ns     13609897 bytes_per_second=3.59608G/s jpg_200
+BM_UValidate/4                    1362 ns         1361 ns       511522 bytes_per_second=70.0621G/s pdf
+BM_UValidate/5                   72514 ns        72438 ns         9537 bytes_per_second=5.26616G/s html4
+BM_UValidate/6                   85884 ns        85860 ns         8117 bytes_per_second=1.64971G/s txt1
+BM_UValidate/7                   77176 ns        77153 ns         8994 bytes_per_second=1.51105G/s txt2
+BM_UValidate/8                  237304 ns       237232 ns         2957 bytes_per_second=1.67535G/s txt3
+BM_UValidate/9                  341798 ns       341700 ns         2049 bytes_per_second=1.31334G/s txt4
+BM_UValidate/10                  12033 ns        12029 ns        58113 bytes_per_second=9.18134G/s pb
+BM_UValidate/11                  61462 ns        61450 ns        11188 bytes_per_second=2.7935G/s gaviota
+BM_UValidateMedley             1210114 ns      1209865 ns          579 bytes_per_second=2.25434G/s
+BM_UIOVec/0                      67237 ns        67174 ns        10333 bytes_per_second=1.41972G/s html
+BM_UIOVec/1                     637657 ns       637295 ns         1112 bytes_per_second=1050.63M/s urls
+BM_UIOVec/2                       2236 ns         2232 ns       316341 bytes_per_second=51.3555G/s jpg
+BM_UIOVec/3                        202 ns          202 ns      3463901 bytes_per_second=945.68M/s jpg_200
+BM_UIOVec/4                       6084 ns         6077 ns       116598 bytes_per_second=15.6931G/s pdf
+BM_UFlatSink/0                   30127 ns        30119 ns        23598 bytes_per_second=3.16638G/s html
+BM_UFlatSink/1                  368165 ns       367987 ns         1866 bytes_per_second=1.77688G/s urls
+BM_UFlatSink/2                    2321 ns         2320 ns       292400 bytes_per_second=49.4084G/s jpg
+BM_UFlatSink/3                     125 ns          125 ns      5612515 bytes_per_second=1.49417G/s jpg_200
+BM_UFlatSink/4                    3848 ns         3847 ns       181668 bytes_per_second=24.7888G/s pdf
+BM_UFlatSink/5                  123941 ns       123873 ns         5666 bytes_per_second=3.07952G/s html4
+BM_UFlatSink/6                  138268 ns       138231 ns         5056 bytes_per_second=1049.28M/s txt1
+BM_UFlatSink/7                  124907 ns       124881 ns         5542 bytes_per_second=955.952M/s txt2
+BM_UFlatSink/8                  340224 ns       340144 ns         2047 bytes_per_second=1.16846G/s txt3
+BM_UFlatSink/9                  519653 ns       519527 ns         1342 bytes_per_second=884.532M/s txt4
+BM_UFlatSink/10                  24889 ns        24883 ns        28155 bytes_per_second=4.43858G/s pb
+BM_UFlatSink/11                 134109 ns       134074 ns         5256 bytes_per_second=1.28034G/s gaviota
+BM_ZFlat/0                       77903 ns        77860 ns         8613 bytes_per_second=1.22485G/s html (22.31 %)
+BM_ZFlat/1                     1251032 ns      1248377 ns          570 bytes_per_second=536.346M/s urls (47.78 %)
+BM_ZFlat/2                        4871 ns         4863 ns       146800 bytes_per_second=23.5751G/s jpg (99.95 %)
+BM_ZFlat/3                         306 ns          306 ns      2255643 bytes_per_second=624.284M/s jpg_200 (74.00 %)
+BM_ZFlat/4                        9171 ns         9169 ns        75590 bytes_per_second=10.4016G/s pdf (83.30 %)
+BM_ZFlat/5                      378467 ns       378359 ns         1832 bytes_per_second=1032.42M/s html4 (22.52 %)
+BM_ZFlat/6                      388234 ns       388134 ns         1789 bytes_per_second=373.694M/s txt1 (57.88 %)
+BM_ZFlat/7                      356995 ns       356886 ns         2019 bytes_per_second=334.504M/s txt2 (61.91 %)
+BM_ZFlat/8                     1050458 ns      1049962 ns          618 bytes_per_second=387.618M/s txt3 (54.99 %)
+BM_ZFlat/9                     1456744 ns      1454911 ns          483 bytes_per_second=315.853M/s txt4 (66.26 %)
+BM_ZFlat/10                      67201 ns        67055 ns        10534 bytes_per_second=1.64706G/s pb (19.68 %)
+BM_ZFlat/11                     298936 ns       298859 ns         2345 bytes_per_second=588.175M/s gaviota (37.72 %)
+BM_ZFlatAll                    5391797 ns      5390436 ns          129 bytes_per_second=518.122M/s 12 kTestDataFiles
+BM_ZFlatIncreasingTableSize      32045 ns        32037 ns        21797 bytes_per_second=967.805M/s 7 tables
+52.00user 0.05system 0:52.11elapsed 99%CPU (0avgtext+0avgdata 16448maxresident)k
+0inputs+0outputs (0major+19656minor)pagefaults 0swaps
+ppc-optimize: Release
+2021-03-26T19:03:42+00:00
+Running ./build_Release/snappy_benchmark
+Run on (16 X 3900 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 512 KiB (x8)
+  L3 Unified 16384 KiB (x2)
+Load Average: 1.67, 1.39, 1.61
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+--------------------------------------------------------------------------------------
+Benchmark                            Time             CPU   Iterations UserCounters...
+--------------------------------------------------------------------------------------
+BM_UFlat/0                       28089 ns        28085 ns        24559 bytes_per_second=3.39563G/s html
+BM_UFlat/1                      355551 ns       355493 ns         1972 bytes_per_second=1.83933G/s urls
+BM_UFlat/2                        2111 ns         2111 ns       331032 bytes_per_second=54.3059G/s jpg
+BM_UFlat/3                         119 ns          119 ns      5863552 bytes_per_second=1.56483G/s jpg_200
+BM_UFlat/4                        3700 ns         3699 ns       185893 bytes_per_second=25.7818G/s pdf
+BM_UFlat/5                      119118 ns       119100 ns         5941 bytes_per_second=3.20295G/s html4
+BM_UFlat/6                      133680 ns       133662 ns         5257 bytes_per_second=1085.15M/s txt1
+BM_UFlat/7                      121511 ns       121491 ns         5911 bytes_per_second=982.622M/s txt2
+BM_UFlat/8                      326325 ns       326250 ns         1988 bytes_per_second=1.21822G/s txt3
+BM_UFlat/9                      499447 ns       499366 ns         1395 bytes_per_second=920.244M/s txt4
+BM_UFlat/10                      24002 ns        23998 ns        29212 bytes_per_second=4.60227G/s pb
+BM_UFlat/11                     128494 ns       128465 ns         5279 bytes_per_second=1.33625G/s gaviota
+BM_UFlatMedley                 1793454 ns      1793097 ns          392 bytes_per_second=1.52108G/s
+BM_UValidate/0                   13432 ns        13428 ns        52186 bytes_per_second=7.10216G/s html
+BM_UValidate/1                  243628 ns       243538 ns         2980 bytes_per_second=2.68488G/s urls
+BM_UValidate/2                    82.9 ns         82.9 ns      8533078 bytes_per_second=1.35072T/s jpg
+BM_UValidate/3                    52.3 ns         52.3 ns     13303773 bytes_per_second=3.56185G/s jpg_200
+BM_UValidate/4                    1360 ns         1360 ns       514566 bytes_per_second=70.1376G/s pdf
+BM_UValidate/5                   71321 ns        71304 ns         9677 bytes_per_second=5.34991G/s html4
+BM_UValidate/6                   85879 ns        85861 ns         8138 bytes_per_second=1.64969G/s txt1
+BM_UValidate/7                   77633 ns        77614 ns         8995 bytes_per_second=1.50208G/s txt2
+BM_UValidate/8                  237592 ns       237527 ns         2943 bytes_per_second=1.67327G/s txt3
+BM_UValidate/9                  350252 ns       350097 ns         2034 bytes_per_second=1.28184G/s txt4
+BM_UValidate/10                  12118 ns        12115 ns        57150 bytes_per_second=9.11617G/s pb
+BM_UValidate/11                  61113 ns        61083 ns        11145 bytes_per_second=2.8103G/s gaviota
+BM_UValidateMedley             1218594 ns      1218257 ns          575 bytes_per_second=2.23881G/s
+BM_UIOVec/0                      69082 ns        68831 ns        10261 bytes_per_second=1.38552G/s html
+BM_UIOVec/1                     628180 ns       627671 ns         1112 bytes_per_second=1066.74M/s urls
+BM_UIOVec/2                       2218 ns         2216 ns       315835 bytes_per_second=51.7268G/s jpg
+BM_UIOVec/3                        202 ns          202 ns      3460291 bytes_per_second=943.742M/s jpg_200
+BM_UIOVec/4                       5958 ns         5956 ns       116852 bytes_per_second=16.0118G/s pdf
+BM_UFlatSink/0                   29513 ns        29495 ns        23804 bytes_per_second=3.2333G/s html
+BM_UFlatSink/1                  367383 ns       367009 ns         1905 bytes_per_second=1.78162G/s urls
+BM_UFlatSink/2                    2280 ns         2280 ns       308528 bytes_per_second=50.2902G/s jpg
+BM_UFlatSink/3                     125 ns          125 ns      5528410 bytes_per_second=1.49468G/s jpg_200
+BM_UFlatSink/4                    3825 ns         3824 ns       181348 bytes_per_second=24.9408G/s pdf
+BM_UFlatSink/5                  123483 ns       123450 ns         5684 bytes_per_second=3.09008G/s html4
+BM_UFlatSink/6                  137888 ns       137868 ns         5069 bytes_per_second=1052.04M/s txt1
+BM_UFlatSink/7                  126258 ns       126233 ns         5547 bytes_per_second=945.708M/s txt2
+BM_UFlatSink/8                  370632 ns       370569 ns         1916 bytes_per_second=1098.27M/s txt3
+BM_UFlatSink/9                  527853 ns       527750 ns         1327 bytes_per_second=870.751M/s txt4
+BM_UFlatSink/10                  24953 ns        24948 ns        28168 bytes_per_second=4.42687G/s pb
+BM_UFlatSink/11                 133896 ns       133862 ns         5102 bytes_per_second=1.28238G/s gaviota
+BM_ZFlat/0                       78136 ns        78113 ns         8595 bytes_per_second=1.22089G/s html (22.31 %)
+BM_ZFlat/1                     1219203 ns      1218938 ns          570 bytes_per_second=549.3M/s urls (47.78 %)
+BM_ZFlat/2                        4804 ns         4803 ns       146458 bytes_per_second=23.8668G/s jpg (99.95 %)
+BM_ZFlat/3                         300 ns          299 ns      2323702 bytes_per_second=636.915M/s jpg_200 (74.00 %)
+BM_ZFlat/4                        9144 ns         9142 ns        76660 bytes_per_second=10.4318G/s pdf (83.30 %)
+BM_ZFlat/5                      373321 ns       373230 ns         1868 bytes_per_second=1046.61M/s html4 (22.52 %)
+BM_ZFlat/6                      387197 ns       387125 ns         1815 bytes_per_second=374.668M/s txt1 (57.88 %)
+BM_ZFlat/7                      342933 ns       342880 ns         2041 bytes_per_second=348.168M/s txt2 (61.91 %)
+BM_ZFlat/8                     1039175 ns      1038943 ns          675 bytes_per_second=391.729M/s txt3 (54.99 %)
+BM_ZFlat/9                     1430573 ns      1430319 ns          485 bytes_per_second=321.284M/s txt4 (66.26 %)
+BM_ZFlat/10                      67284 ns        67259 ns         9833 bytes_per_second=1.64207G/s pb (19.68 %)
+BM_ZFlat/11                     296585 ns       296506 ns         2361 bytes_per_second=592.843M/s gaviota (37.72 %)
+BM_ZFlatAll                    5363601 ns      5362561 ns          130 bytes_per_second=520.815M/s 12 kTestDataFiles
+BM_ZFlatIncreasingTableSize      31832 ns        31827 ns        21994 bytes_per_second=974.205M/s 7 tables
+51.85user 0.04system 0:51.94elapsed 99%CPU (0avgtext+0avgdata 16348maxresident)k
+0inputs+0outputs (0major+19656minor)pagefaults 0swaps
+master: Debug
+2021-03-26T19:04:48+00:00
+Running ./build_Debug/snappy_benchmark
+Run on (16 X 3900 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 512 KiB (x8)
+  L3 Unified 16384 KiB (x2)
+Load Average: 1.65, 1.44, 1.61
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+***WARNING*** Library was built as DEBUG. Timings may be affected.
+--------------------------------------------------------------------------------------
+Benchmark                            Time             CPU   Iterations UserCounters...
+--------------------------------------------------------------------------------------
+BM_UFlat/0                      171950 ns       171721 ns         4076 bytes_per_second=568.691M/s html
+BM_UFlat/1                     1906559 ns      1904058 ns          367 bytes_per_second=351.65M/s urls
+BM_UFlat/2                        3325 ns         3320 ns       210984 bytes_per_second=34.5337G/s jpg
+BM_UFlat/3                         772 ns          771 ns       905062 bytes_per_second=247.417M/s jpg_200
+BM_UFlat/4                       18288 ns        18264 ns        38334 bytes_per_second=5.22158G/s pdf
+BM_UFlat/5                      690613 ns       689599 ns         1015 bytes_per_second=566.453M/s html4
+BM_UFlat/6                      762339 ns       761849 ns          919 bytes_per_second=190.383M/s txt1
+BM_UFlat/7                      667989 ns       666990 ns         1048 bytes_per_second=178.983M/s txt2
+BM_UFlat/8                     1986031 ns      1985097 ns          352 bytes_per_second=205.02M/s txt3
+BM_UFlat/9                     2764675 ns      2762429 ns          254 bytes_per_second=166.353M/s txt4
+BM_UFlat/10                     148040 ns       147928 ns         4729 bytes_per_second=764.525M/s pb
+BM_UFlat/11                     778743 ns       778643 ns          896 bytes_per_second=225.753M/s gaviota
+BM_UFlatMedley                 9905709 ns      9903728 ns           71 bytes_per_second=282.005M/s
+BM_UValidate/0                  144821 ns       144799 ns         4830 bytes_per_second=674.426M/s html
+BM_UValidate/1                 1634615 ns      1634340 ns          426 bytes_per_second=409.684M/s urls
+BM_UValidate/2                     731 ns          731 ns       957116 bytes_per_second=156.807G/s jpg
+BM_UValidate/3                     562 ns          561 ns      1247562 bytes_per_second=339.718M/s jpg_200
+BM_UValidate/4                   13929 ns        13926 ns        50011 bytes_per_second=6.84808G/s pdf
+BM_UValidate/5                  582624 ns       582506 ns         1202 bytes_per_second=670.595M/s html4
+BM_UValidate/6                  646055 ns       645941 ns         1081 bytes_per_second=224.546M/s txt1
+BM_UValidate/7                  573996 ns       573912 ns         1219 bytes_per_second=208.011M/s txt2
+BM_UValidate/8                 1691512 ns      1691211 ns          414 bytes_per_second=240.647M/s txt3
+BM_UValidate/9                 2374560 ns      2374150 ns          295 bytes_per_second=193.559M/s txt4
+BM_UValidate/10                 127439 ns       127420 ns         5494 bytes_per_second=887.574M/s pb
+BM_UValidate/11                 594824 ns       594701 ns         1169 bytes_per_second=295.579M/s gaviota
+BM_UValidateMedley             8407513 ns      8405674 ns           83 bytes_per_second=332.264M/s
+BM_UIOVec/0                     333104 ns       333027 ns         2097 bytes_per_second=293.239M/s html
+BM_UIOVec/1                    3056034 ns      3055280 ns          229 bytes_per_second=219.149M/s urls
+BM_UIOVec/2                       3296 ns         3296 ns       212458 bytes_per_second=34.784G/s jpg
+BM_UIOVec/3                        897 ns          897 ns       780334 bytes_per_second=212.575M/s jpg_200
+BM_UIOVec/4                      37685 ns        37678 ns        18590 bytes_per_second=2.53109G/s pdf
+BM_UFlatSink/0                  171635 ns       171592 ns         4073 bytes_per_second=569.118M/s html
+BM_UFlatSink/1                 1906658 ns      1906129 ns          367 bytes_per_second=351.268M/s urls
+BM_UFlatSink/2                    3464 ns         3463 ns       201736 bytes_per_second=33.1004G/s jpg
+BM_UFlatSink/3                     797 ns          797 ns       876477 bytes_per_second=239.267M/s jpg_200
+BM_UFlatSink/4                   18383 ns        18379 ns        38230 bytes_per_second=5.18889G/s pdf
+BM_UFlatSink/5                  698456 ns       698226 ns         1011 bytes_per_second=559.453M/s html4
+BM_UFlatSink/6                  798319 ns       797973 ns          918 bytes_per_second=181.765M/s txt1
+BM_UFlatSink/7                  681005 ns       680829 ns         1023 bytes_per_second=175.345M/s txt2
+BM_UFlatSink/8                 2000946 ns      2000317 ns          349 bytes_per_second=203.46M/s txt3
+BM_UFlatSink/9                 2768144 ns      2767596 ns          253 bytes_per_second=166.042M/s txt4
+BM_UFlatSink/10                 148054 ns       148023 ns         4717 bytes_per_second=764.031M/s pb
+BM_UFlatSink/11                 795099 ns       794807 ns          897 bytes_per_second=221.162M/s gaviota
+BM_ZFlat/0                      590438 ns       590258 ns         1129 bytes_per_second=165.447M/s html (22.31 %)
+BM_ZFlat/1                     7357863 ns      7353586 ns           97 bytes_per_second=91.0525M/s urls (47.78 %)
+BM_ZFlat/2                       16810 ns        16770 ns        42112 bytes_per_second=6.83617G/s jpg (99.95 %)
+BM_ZFlat/3                        2531 ns         2526 ns       276627 bytes_per_second=75.5079M/s jpg_200 (74.00 %)
+BM_ZFlat/4                       66806 ns        66668 ns        10496 bytes_per_second=1.43047G/s pdf (83.30 %)
+BM_ZFlat/5                     2340779 ns      2335955 ns          300 bytes_per_second=167.223M/s html4 (22.52 %)
+BM_ZFlat/6                     2237025 ns      2232501 ns          313 bytes_per_second=64.969M/s txt1 (57.88 %)
+BM_ZFlat/7                     1949479 ns      1945375 ns          359 bytes_per_second=61.366M/s txt2 (61.91 %)
+BM_ZFlat/8                     5936494 ns      5923971 ns          118 bytes_per_second=68.7013M/s txt3 (54.99 %)
+BM_ZFlat/9                     7958115 ns      7941505 ns           88 bytes_per_second=57.8654M/s txt4 (66.26 %)
+BM_ZFlat/10                     540748 ns       539610 ns         1300 bytes_per_second=209.585M/s pb (19.68 %)
+BM_ZFlat/11                    2012140 ns      2007988 ns          349 bytes_per_second=87.541M/s gaviota (37.72 %)
+BM_ZFlatAll                   30933349 ns     30867404 ns           23 bytes_per_second=90.4807M/s 12 kTestDataFiles
+BM_ZFlatIncreasingTableSize     308579 ns       307930 ns         2266 bytes_per_second=100.691M/s 7 tables
+50.42user 0.01system 0:50.50elapsed 99%CPU (0avgtext+0avgdata 16708maxresident)k
+0inputs+0outputs (0major+17705minor)pagefaults 0swaps
+ppc-optimize: Debug
+2021-03-26T19:05:45+00:00
+Running ./build_Debug/snappy_benchmark
+Run on (16 X 3900 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 512 KiB (x8)
+  L3 Unified 16384 KiB (x2)
+Load Average: 1.60, 1.46, 1.61
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+***WARNING*** Library was built as DEBUG. Timings may be affected.
+--------------------------------------------------------------------------------------
+Benchmark                            Time             CPU   Iterations UserCounters...
+--------------------------------------------------------------------------------------
+BM_UFlat/0                      171563 ns       171531 ns         4076 bytes_per_second=569.321M/s html
+BM_UFlat/1                     1906479 ns      1906087 ns          367 bytes_per_second=351.276M/s urls
+BM_UFlat/2                        3376 ns         3375 ns       207366 bytes_per_second=33.9672G/s jpg
+BM_UFlat/3                         773 ns          773 ns       905124 bytes_per_second=246.831M/s jpg_200
+BM_UFlat/4                       18311 ns        18306 ns        38293 bytes_per_second=5.20953G/s pdf
+BM_UFlat/5                      691545 ns       691397 ns         1013 bytes_per_second=564.979M/s html4
+BM_UFlat/6                      762535 ns       762284 ns          917 bytes_per_second=190.275M/s txt1
+BM_UFlat/7                      666345 ns       666216 ns         1051 bytes_per_second=179.191M/s txt2
+BM_UFlat/8                     1987454 ns      1987053 ns          351 bytes_per_second=204.818M/s txt3
+BM_UFlat/9                     2762176 ns      2761386 ns          253 bytes_per_second=166.416M/s txt4
+BM_UFlat/10                     148002 ns       147961 ns         4732 bytes_per_second=764.351M/s pb
+BM_UFlat/11                     781300 ns       780961 ns          896 bytes_per_second=225.083M/s gaviota
+BM_UFlatMedley                 9931069 ns      9926450 ns           71 bytes_per_second=281.36M/s
+BM_UValidate/0                  145436 ns       145384 ns         4827 bytes_per_second=671.711M/s html
+BM_UValidate/1                 1637404 ns      1637046 ns          428 bytes_per_second=409.006M/s urls
+BM_UValidate/2                     732 ns          732 ns       956784 bytes_per_second=156.558G/s jpg
+BM_UValidate/3                     565 ns          565 ns      1231497 bytes_per_second=337.46M/s jpg_200
+BM_UValidate/4                   14013 ns        14011 ns        50082 bytes_per_second=6.80679G/s pdf
+BM_UValidate/5                  583023 ns       582905 ns         1202 bytes_per_second=670.135M/s html4
+BM_UValidate/6                  651059 ns       650911 ns         1079 bytes_per_second=222.831M/s txt1
+BM_UValidate/7                  572801 ns       572697 ns         1219 bytes_per_second=208.452M/s txt2
+BM_UValidate/8                 1691770 ns      1691473 ns          414 bytes_per_second=240.609M/s txt3
+BM_UValidate/9                 2373234 ns      2372864 ns          294 bytes_per_second=193.664M/s txt4
+BM_UValidate/10                 127352 ns       127329 ns         5512 bytes_per_second=888.205M/s pb
+BM_UValidate/11                 595926 ns       595801 ns         1179 bytes_per_second=295.034M/s gaviota
+BM_UValidateMedley             8413579 ns      8409512 ns           83 bytes_per_second=332.112M/s
+BM_UIOVec/0                     332917 ns       332846 ns         2102 bytes_per_second=293.398M/s html
+BM_UIOVec/1                    3055123 ns      3054310 ns          229 bytes_per_second=219.219M/s urls
+BM_UIOVec/2                       3268 ns         3267 ns       214853 bytes_per_second=35.0869G/s jpg
+BM_UIOVec/3                        899 ns          899 ns       777055 bytes_per_second=212.124M/s jpg_200
+BM_UIOVec/4                      37689 ns        37682 ns        18551 bytes_per_second=2.53087G/s pdf
+BM_UFlatSink/0                  172010 ns       171971 ns         4076 bytes_per_second=567.865M/s html
+BM_UFlatSink/1                 1911461 ns      1910867 ns          367 bytes_per_second=350.397M/s urls
+BM_UFlatSink/2                    3421 ns         3420 ns       204125 bytes_per_second=33.5194G/s jpg
+BM_UFlatSink/3                     797 ns          797 ns       879795 bytes_per_second=239.28M/s jpg_200
+BM_UFlatSink/4                   18453 ns        18449 ns        37950 bytes_per_second=5.16922G/s pdf
+BM_UFlatSink/5                  695947 ns       695660 ns         1009 bytes_per_second=561.517M/s html4
+BM_UFlatSink/6                  765364 ns       765208 ns          916 bytes_per_second=189.548M/s txt1
+BM_UFlatSink/7                  668617 ns       668487 ns         1047 bytes_per_second=178.582M/s txt2
+BM_UFlatSink/8                 1996845 ns      1996436 ns          351 bytes_per_second=203.855M/s txt3
+BM_UFlatSink/9                 2862562 ns      2857659 ns          252 bytes_per_second=160.809M/s txt4
+BM_UFlatSink/10                 149367 ns       149248 ns         4664 bytes_per_second=757.759M/s pb
+BM_UFlatSink/11                 804450 ns       803451 ns          892 bytes_per_second=218.783M/s gaviota
+BM_ZFlat/0                      580753 ns       580341 ns         1200 bytes_per_second=168.274M/s html (22.31 %)
+BM_ZFlat/1                     7436449 ns      7413008 ns           93 bytes_per_second=90.3226M/s urls (47.78 %)
+BM_ZFlat/2                       16825 ns        16769 ns        42195 bytes_per_second=6.83627G/s jpg (99.95 %)
+BM_ZFlat/3                        2561 ns         2560 ns       257888 bytes_per_second=74.5016M/s jpg_200 (74.00 %)
+BM_ZFlat/4                       67265 ns        67250 ns        10413 bytes_per_second=1.4181G/s pdf (83.30 %)
+BM_ZFlat/5                     2357102 ns      2356141 ns          298 bytes_per_second=165.79M/s html4 (22.52 %)
+BM_ZFlat/6                     2247363 ns      2247034 ns          311 bytes_per_second=64.5488M/s txt1 (57.88 %)
+BM_ZFlat/7                     1944216 ns      1943500 ns          360 bytes_per_second=61.4253M/s txt2 (61.91 %)
+BM_ZFlat/8                     5940089 ns      5938865 ns          118 bytes_per_second=68.529M/s txt3 (54.99 %)
+BM_ZFlat/9                     7961450 ns      7960282 ns           88 bytes_per_second=57.7289M/s txt4 (66.26 %)
+BM_ZFlat/10                     541295 ns       541093 ns         1297 bytes_per_second=209.011M/s pb (19.68 %)
+BM_ZFlat/11                    2031976 ns      2031375 ns          340 bytes_per_second=86.5331M/s gaviota (37.72 %)
+BM_ZFlatAll                   31246707 ns     31229128 ns           23 bytes_per_second=89.4326M/s 12 kTestDataFiles
+BM_ZFlatIncreasingTableSize     310328 ns       310258 ns         2260 bytes_per_second=99.9357M/s 7 tables
+50.41user 0.04system 0:50.50elapsed 99%CPU (0avgtext+0avgdata 16684maxresident)k
+0inputs+0outputs (0major+17705minor)pagefaults 0swaps
