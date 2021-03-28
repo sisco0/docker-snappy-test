@@ -1,4 +1,4 @@
-FROM gcc:10.2.0
+FROM ppc64le/gcc:10.2.0
 
 # Get build deps
 RUN apt update
