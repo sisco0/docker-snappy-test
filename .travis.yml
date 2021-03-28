@@ -1,0 +1,9 @@
+os: linux
+arch: ppc64le
+
+jobs:
+  include:
+    - stage: build docker image
+      script:
+      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+      - docker build -t travis-ci-build-stages-demo .
